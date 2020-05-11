@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | Tiffany Dunn</title>
+    <link>/project/</link>
+      <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 16 May 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hua85a1440746638223fd71089501243b9_11706_512x512_fill_lanczos_center_2.png</url>
+      <title>Projects</title>
+      <link>/project/</link>
+    </image>
+    
+    <item>
+      <title>Passion Project</title>
+      <link>/project/internal-project/</link>
+      <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
+      <guid>/project/internal-project/</guid>
+      <description>&lt;p&gt;Hi Everyone,&lt;/p&gt;
+&lt;p&gt;I want to start off by thanking all of you for checking out this website. I developed this website myself in &lt;code&gt;RStudio&lt;/code&gt; using the Academic theme for Hugo. I started this project as a way to push myself to do something productive while quarantined due to the coronavirus pandemic. While anxiously awaiting graduation and starting a professional career, I wanted something to work on in between job searching and schoolwork that would make me feel fufilled. My main goal for this is mostly an extension of my resume which can also be found &lt;strong&gt;here&lt;/strong&gt;.  In addition, I hope to make cool visualizations and develop my skills using Tableau with interesting datasets that I find and want to explore.&lt;/p&gt;
+&lt;p&gt;Just getting this site to the point of being published has been gratifying and has definitely had a learning curve to it.  I&amp;rsquo;m excited to see where this takes me!&lt;/p&gt;
+&lt;p&gt;Best,&lt;/p&gt;
+&lt;p&gt;Tiff Dunn&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

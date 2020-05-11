@@ -1,0 +1,4 @@
+"0","ggplot(data = b.data, mapping = aes(x = Race, y = Byssinosis)) +"
+"0","  labs(title=""Byssinosis by Race"",x=""race"", y = ""# subjects with Byssinosis"") +"
+"0","  theme_classic() +"
+"0","  geom_boxplot()"

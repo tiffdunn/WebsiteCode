@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research | Tiffany Dunn</title>
+    <link>/tag/research/</link>
+      <atom:link href="/tag/research/index.xml" rel="self" type="application/rss+xml" />
+    <description>Research</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/images/icon_hua85a1440746638223fd71089501243b9_11706_512x512_fill_lanczos_center_2.png</url>
+      <title>Research</title>
+      <link>/tag/research/</link>
+    </image>
+    
+    <item>
+      <title>Determining the biological associates of acute cold-pressor post-encoding stress effects on human memory:The role of salivary interleukin-1β</title>
+      <link>/publication/journal-article/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/journal-article/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

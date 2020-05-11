@@ -1,0 +1,4 @@
+"0","ggplot(data = b.data, mapping = aes(x = Smoking, y = Byssinosis)) +"
+"0","  labs(title=""Byssinosis by Smoking Status"",x=""smoking status"", y = ""# subjects with Byssinosis"") +"
+"0","  theme_classic() +"
+"0","  geom_boxplot()"

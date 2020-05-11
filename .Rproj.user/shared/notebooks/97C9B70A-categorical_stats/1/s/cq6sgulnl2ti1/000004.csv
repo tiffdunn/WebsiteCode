@@ -1,0 +1,4 @@
+"0","ggplot(data = b.data, mapping = aes(x = Employment, y = Byssinosis), main = ""Bysinosis status by Employment length"") +"
+"0","  labs(title=""Byssinosis by Length of Employment"",x=""length of employment (years)"", y = ""# subjects with Byssinosis"") +"
+"0","  theme_classic() +"
+"0","  geom_boxplot()"
