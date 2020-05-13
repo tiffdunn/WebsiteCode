@@ -77,19 +77,6 @@
     </item>
     
     <item>
-      <title>Passion Project</title>
-      <link>/project/internal-project/</link>
-      <pubDate>Sat, 16 May 2020 00:00:00 +0000</pubDate>
-      <guid>/project/internal-project/</guid>
-      <description>&lt;p&gt;Hi Everyone,&lt;/p&gt;
-&lt;p&gt;I want to start off by thanking all of you for checking out this website. I developed this website myself in &lt;code&gt;RStudio&lt;/code&gt; using the Academic theme for Hugo. I started this project as a way to push myself to do something productive while quarantined due to the coronavirus pandemic. While anxiously awaiting graduation and starting a professional career, I wanted something to work on in between job searching and schoolwork that would make me feel fufilled. My main goal for this is mostly an extension of my resume which can also be found &lt;strong&gt;here&lt;/strong&gt;.  In addition, I hope to make cool visualizations and develop my skills using Tableau with interesting datasets that I find and want to explore.&lt;/p&gt;
-&lt;p&gt;Just getting this site to the point of being published has been gratifying and has definitely had a learning curve to it.  I&amp;rsquo;m excited to see where this takes me!&lt;/p&gt;
-&lt;p&gt;Best,&lt;/p&gt;
-&lt;p&gt;Tiff Dunn&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Categorical Statistics</title>
       <link>/post/categorical_stats/</link>
       <pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate>
@@ -301,6 +288,19 @@ summary(final.model)$coefficients
 &lt;h3&gt;Summary&lt;/h3&gt;
 &lt;p&gt;By making use of categorical data analysis, I can conclude that the dustiness of workspace, length of employment, and smoking status are all significant factors to consider when trying to predict if a worker in these conditions would contract byssinosis. Through the analysis of this data I have determined that there is also a significant interaction between dustiness of workspace and smoking status that would be important to take into account in this model. By taking into account both the AIC and BIC I was able to get a full picture on how to best to fit our model without over or under simplifying our model with the hope of making use of further predictions of incidence of this lung disease.&lt;/p&gt;
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Passion Project</title>
+      <link>/project/internal-project/</link>
+      <pubDate>Fri, 08 May 2020 00:00:00 +0000</pubDate>
+      <guid>/project/internal-project/</guid>
+      <description>&lt;p&gt;Hi Everyone,&lt;/p&gt;
+&lt;p&gt;I want to start off by thanking all of you for checking out this website. I developed this website myself in &lt;code&gt;RStudio&lt;/code&gt; using the Academic theme for Hugo. I started this project as a way to push myself to do something productive while quarantined due to the coronavirus pandemic. While anxiously awaiting graduation and starting a professional career, I wanted something to work on in between job searching and schoolwork that would make me feel fufilled. My main goal for this is mostly an extension of my resume which can also be found on the home page. In addition, I hope to make cool visualizations and develop my skills using Tableau with interesting datasets that I find and want to explore.&lt;/p&gt;
+&lt;p&gt;Just getting this site ready to deploy has been gratifying, getting used to and learning git and tracking changes through GitHub has also been a humbling and rewarding experience in order to keep this site updated regularly. I&amp;rsquo;m excited to see where this takes me!&lt;/p&gt;
+&lt;p&gt;Best,&lt;/p&gt;
+&lt;p&gt;Tiff Dunn&lt;/p&gt;
 </description>
     </item>
     
