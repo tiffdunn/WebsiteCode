@@ -8,7 +8,7 @@ weight = 65  # Order that this section will appear.
 title = "Projects"
 subtitle = ""
 
-[content]
+[content] 
   # Page type to display. E.g. project.
   page_type = "project"
 
