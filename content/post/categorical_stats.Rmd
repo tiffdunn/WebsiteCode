@@ -37,6 +37,7 @@ library(plyr)
 library(gridExtra)
 b.data = read.csv("Byssinosis.csv")
 b.data$Workspace = as.factor(b.data$Workspace)
+
 plot1 <- ggplot(data = b.data, mapping = aes(x = Workspace, y = Byssinosis)) +
   labs(title="Byssinosis by Dustyness of Workspace",x="type of workspace", y = "# subjects with Byssinosis") +
   theme_classic() +
