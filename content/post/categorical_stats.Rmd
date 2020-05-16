@@ -36,26 +36,28 @@ library(ggplot2)
 library(plyr)
 b.data = read.csv("Byssinosis.csv")
 b.data$Workspace = as.factor(b.data$Workspace)
-ggplot(data = b.data, mapping = aes(x = Workspace, y = Byssinosis)) +
+require(gridExtra)
+plot1 <- ggplot(data = b.data, mapping = aes(x = Workspace, y = Byssinosis)) +
   labs(title="Byssinosis by Dustyness of Workspace",x="type of workspace", y = "# subjects with Byssinosis") +
   theme_classic() +
   geom_boxplot()
-ggplot(data = b.data, mapping = aes(x = Employment, y = Byssinosis), main = "Bysinosis status by Employment length") +
+plot2 <- ggplot(data = b.data, mapping = aes(x = Employment, y = Byssinosis), main = "Bysinosis status by Employment length") +
   labs(title="Byssinosis by Length of Employment",x="length of employment (years)", y = "# subjects with Byssinosis") +
   theme_classic() +
   geom_boxplot()
-ggplot(data = b.data, mapping = aes(x = Smoking, y = Byssinosis)) +
+plot3 <- ggplot(data = b.data, mapping = aes(x = Smoking, y = Byssinosis)) +
   labs(title="Byssinosis by Smoking Status",x="smoking status", y = "# subjects with Byssinosis") +
   theme_classic() +
   geom_boxplot()
-ggplot(data = b.data, mapping = aes(x = Sex, y = Byssinosis)) +
+plot4 <- ggplot(data = b.data, mapping = aes(x = Sex, y = Byssinosis)) +
   labs(title="Byssinosis by Sex",x="sex", y = "# subjects with Byssinosis") +
   theme_classic() +
   geom_boxplot()
-ggplot(data = b.data, mapping = aes(x = Race, y = Byssinosis)) +
+plot5 <- ggplot(data = b.data, mapping = aes(x = Race, y = Byssinosis)) +
   labs(title="Byssinosis by Race",x="race", y = "# subjects with Byssinosis") +
   theme_classic() +
   geom_boxplot()
+grid.arrange(plot1,plot2,plot3,plot4,plot5, ncol=3)
 ```
 
 Figure 1 gives us a general idea of the spread of the data by variable and factor level. From this plot, I am able to see which variables have different distributions between its factor levels. The difference in distribution across factor levels may give us a hint as to which variables are going to be important to us later on during model selection. For example, as displayed in Figure 1, the variable race had factor levels white and other, it appears that both levels have roughly the same distribution of number of subjects that were diagnosed with byssinosis. Just from this I could guess that race is not going to have a significant effect on byssinosis. Similar assumptions could be made, but more inferential statistics will have to be done to make any significant conclusions. 
