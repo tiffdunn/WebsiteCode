@@ -203,9 +203,10 @@ summary(final.model)$coefficients
 ## Workspace2:SmokingYes -1.1806748  0.5489627  -2.150738 3.149691e-02
 ## Workspace3:SmokingYes -0.4864177  0.4338355  -1.121203 2.622014e-01</code></pre>
 <p>The using the above coefficients, the formula for the final model that given by:</p>
-<p><span class="math display">\[\log(\frac{\pi}{1-\pi}) = -2.7146 + (-1.7769)X_{Workspace, less dusty}\]</span></p>
-<p><span class="math display">\[+ (-2.3461)X_{Workspace, least dusty} + 0.6638X_{Employment, \ge20} + 0.4990X_{Employment, 10-19} \]</span></p>
-<p><span class="math display">\[+ 0.9573X_{Smoking, yes} + (-1.1807)X_{Workspace, less dusty:Smoking, yes} + (-0.4864)X_{Workspace, least dusty:Smoking, yes}\]</span></p>
+<p><span class="math inline">\(\log(\frac{\pi}{1-\pi}) = -2.7146 + (-1.7769)X_{Workspace, less dusty}\)</span></p>
+<p>$+ (-2.3461)X_{Workspace, least dusty} + 0.6638X_{Employment, 20} + 0.4990X_{Employment, 10-19} $</p>
+<p>$+ 0.9573X_{Smoking, yes} + (-1.1807)X_{Workspace, less dusty:Smoking, yes} $</p>
+<p><span class="math inline">\(+ (-0.4864)X_{Workspace, least dusty:Smoking, yes}\)</span></p>
 <p>Furthermore, I can interpret the coefficients of the model in terms of their effect on the odds on the status of byssinosis using the values above. I can see that the indicator for employment greater than or equal to 10 and smoking status is no are the only three predictors that result in a positive effect on having byssinosis. Concurrently, the other variables result in the decrease of having byssinosis when all others are zero.</p>
 </div>
 <div id="summary" class="section level3">
