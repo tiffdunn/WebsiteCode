@@ -43,6 +43,9 @@
 
   
   
+  
+  <script src="/js/mathjax-config.js"></script>
+  
 
   
   
@@ -173,9 +176,9 @@
 
       
       
-        
-      
 
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
       
     
       
@@ -689,33 +692,32 @@ Final Project
 <p>We’ll begin our analysis by looking at a descriptive summary of the data collected. To accomplish this, I can look at a plot of multiple boxplots measuring byssinosis by one predictor split up by its levels:</p>
 <pre class="r"><code>library(ggplot2)
 library(plyr)
+library(gridExtra)
 b.data = read.csv(&quot;Byssinosis.csv&quot;)
 b.data$Workspace = as.factor(b.data$Workspace)
-ggplot(data = b.data, mapping = aes(x = Workspace, y = Byssinosis)) +
+
+plot1 &lt;- ggplot(data = b.data, mapping = aes(x = Workspace, y = Byssinosis)) +
   labs(title=&quot;Byssinosis by Dustyness of Workspace&quot;,x=&quot;type of workspace&quot;, y = &quot;# subjects with Byssinosis&quot;) +
   theme_classic() +
-  geom_boxplot()</code></pre>
-<p><img src="/post/categorical_stats_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
-<pre class="r"><code>ggplot(data = b.data, mapping = aes(x = Employment, y = Byssinosis), main = &quot;Bysinosis status by Employment length&quot;) +
+  geom_boxplot()
+plot2 &lt;- ggplot(data = b.data, mapping = aes(x = Employment, y = Byssinosis), main = &quot;Bysinosis status by Employment length&quot;) +
   labs(title=&quot;Byssinosis by Length of Employment&quot;,x=&quot;length of employment (years)&quot;, y = &quot;# subjects with Byssinosis&quot;) +
   theme_classic() +
-  geom_boxplot()</code></pre>
-<p><img src="/post/categorical_stats_files/figure-html/unnamed-chunk-1-2.png" width="672" /></p>
-<pre class="r"><code>ggplot(data = b.data, mapping = aes(x = Smoking, y = Byssinosis)) +
+  geom_boxplot()
+plot3 &lt;- ggplot(data = b.data, mapping = aes(x = Smoking, y = Byssinosis)) +
   labs(title=&quot;Byssinosis by Smoking Status&quot;,x=&quot;smoking status&quot;, y = &quot;# subjects with Byssinosis&quot;) +
   theme_classic() +
-  geom_boxplot()</code></pre>
-<p><img src="/post/categorical_stats_files/figure-html/unnamed-chunk-1-3.png" width="672" /></p>
-<pre class="r"><code>ggplot(data = b.data, mapping = aes(x = Sex, y = Byssinosis)) +
+  geom_boxplot()
+plot4 &lt;- ggplot(data = b.data, mapping = aes(x = Sex, y = Byssinosis)) +
   labs(title=&quot;Byssinosis by Sex&quot;,x=&quot;sex&quot;, y = &quot;# subjects with Byssinosis&quot;) +
   theme_classic() +
-  geom_boxplot()</code></pre>
-<p><img src="/post/categorical_stats_files/figure-html/unnamed-chunk-1-4.png" width="672" /></p>
-<pre class="r"><code>ggplot(data = b.data, mapping = aes(x = Race, y = Byssinosis)) +
+  geom_boxplot()
+plot5 &lt;- ggplot(data = b.data, mapping = aes(x = Race, y = Byssinosis)) +
   labs(title=&quot;Byssinosis by Race&quot;,x=&quot;race&quot;, y = &quot;# subjects with Byssinosis&quot;) +
   theme_classic() +
-  geom_boxplot()</code></pre>
-<p><img src="/post/categorical_stats_files/figure-html/unnamed-chunk-1-5.png" width="672" /></p>
+  geom_boxplot()
+grid.arrange(plot1,plot2,plot3,plot4,plot5, ncol=3)</code></pre>
+<p><img src="/post/categorical_stats_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
 <p>Figure 1 gives us a general idea of the spread of the data by variable and factor level. From this plot, I am able to see which variables have different distributions between its factor levels. The difference in distribution across factor levels may give us a hint as to which variables are going to be important to us later on during model selection. For example, as displayed in Figure 1, the variable race had factor levels white and other, it appears that both levels have roughly the same distribution of number of subjects that were diagnosed with byssinosis. Just from this I could guess that race is not going to have a significant effect on byssinosis. Similar assumptions could be made, but more inferential statistics will have to be done to make any significant conclusions.</p>
 <p>Moving on in our exploration of this data, a model can be fit that will help predict a subject’s byssinosis status given these predictors, and whether or not the predictor adds a significant effect to the odds of having byssinosis. To do so, I choose to start with a generalized additive linear model for the log odds of having byssinosis. Wald test p-values were calculated for each predictor, and all but race and sex showed significant at level 0.01 or lower, but further model selection techniques can be conducted in order to determine which predictors to include in our final model</p>
 <pre class="r"><code>fullModel = glm(cbind(Byssinosis,Non.Byssinosis) ~., data = b.data,family = binomial())
@@ -861,8 +863,9 @@ summary(final.model)$coefficients
 ## Workspace2:SmokingYes -1.1806748  0.5489627  -2.150738 3.149691e-02
 ## Workspace3:SmokingYes -0.4864177  0.4338355  -1.121203 2.622014e-01</code></pre>
 <p>The using the above coefficients, the formula for the final model that given by:</p>
-<p><span class="math display">\[\log(\frac{\pi}{1-\pi}) = -2.7146 + (-1.7769)X_{Workspace, less dusty} + (-2.3461)X_{Workspace, least dusty} + 0.6638X_{Employment, \ge20} \]</span></p>
-<p><span class="math display">\[+ 0.4990X_{Employment, 10-19} + 0.9573X_{Smoking, yes} + (-1.1807)X_{Workspace, less dusty:Smoking, yes} + (-0.4864)X_{Workspace, least dusty:Smoking, yes}\]</span></p>
+<p><span class="math display">\[\log(\frac{\pi}{1-\pi}) = -2.7146 + (-1.7769)X_{Workspace, less dusty}\]</span></p>
+<p><span class="math display">\[+ (-2.3461)X_{Workspace, least dusty} + 0.6638X_{Employment, \ge20} + 0.4990X_{Employment, 10-19} \]</span></p>
+<p><span class="math display">\[+ 0.9573X_{Smoking, yes} + (-1.1807)X_{Workspace, less dusty:Smoking, yes} + (-0.4864)X_{Workspace, least dusty:Smoking, yes}\]</span></p>
 <p>Furthermore, I can interpret the coefficients of the model in terms of their effect on the odds on the status of byssinosis using the values above. I can see that the indicator for employment greater than or equal to 10 and smoking status is no are the only three predictors that result in a positive effect on having byssinosis. Concurrently, the other variables result in the decrease of having byssinosis when all others are zero.</p>
 </div>
 <div id="summary" class="section level3">
