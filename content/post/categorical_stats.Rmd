@@ -100,11 +100,14 @@ summary(final.model)$coefficients
 
 The using the above coefficients, the formula for the final model that given by: 
 
-$$\log(\frac{\pi}{1-\pi}) = -2.7146 + (-1.7769)X_{Workspace, less dusty}$$
 
-$$+ (-2.3461)X_{Workspace, least dusty} + 0.6638X_{Employment, \ge20} + 0.4990X_{Employment, 10-19} $$
+$\log(\frac{\pi}{1-\pi}) = -2.7146 + (-1.7769)X_{Workspace, less dusty}$
 
-$$+ 0.9573X_{Smoking, yes} + (-1.1807)X_{Workspace, less dusty:Smoking, yes} + (-0.4864)X_{Workspace, least dusty:Smoking, yes}$$
+$+ (-2.3461)X_{Workspace, least dusty} + 0.6638X_{Employment, \ge20} + 0.4990X_{Employment, 10-19} $
+
+$+ 0.9573X_{Smoking, yes} + (-1.1807)X_{Workspace, less dusty:Smoking, yes} $
+
+$+ (-0.4864)X_{Workspace, least dusty:Smoking, yes}$
 
 
 
