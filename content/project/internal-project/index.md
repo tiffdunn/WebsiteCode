@@ -23,10 +23,10 @@ url_video: ""
 
 Hi Everyone,
 
-I want to start off by thanking all of you for checking out this website. I developed this website myself in `RStudio` using the Academic theme for Hugo. I started this project as a way to push myself to do something productive while quarantined due to the coronavirus pandemic. While anxiously awaiting graduation and starting a professional career, I wanted something to work on in between job searching and schoolwork that would make me feel fufilled. My main goal for this is mostly an extension of my resume which can also be found on the home page. In addition, I hope to make cool visualizations and develop my skills using Tableau with interesting datasets that I find and want to explore.
+I want to start off by thanking all of you for checking out this website. I developed this website myself in `RStudio` using the Academic theme for Hugo. I started this project as a way to push myself to do something productive while quarantined due to the coronavirus pandemic. While anxiously awaiting graduation and starting a professional career, I wanted something to work on in between job searching and schoolwork that would make me feel fulfilled. My main goal for this is mostly an extension of my resume which can also be found on the home page. In addition, I hope continue developing my skills using Tableau with interesting datasets that I find and want to explore.
 
-Just getting this site ready to deploy has been gratifying, getting used to and learning git and tracking changes through GitHub has also been a humbling and rewarding experience in order to keep this site updated regularly. I'm excited to see where this takes me!
+Just getting this site ready to deploy has been gratifying, and learning to track changes through GitHub has also been a humbling and rewarding experience in order to keep this site updated regularly. I'm excited to see where this takes me!
 
 Best,
 
-Tiff Dunn
+Tiffany Dunn
