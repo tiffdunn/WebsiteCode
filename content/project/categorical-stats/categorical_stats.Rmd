@@ -2,21 +2,11 @@
 title: "Best Predictors of Byssinosis"
 author: "Tiffany Dunn"
 date: 2020-05-08T00:00:00-00:00
-links:
-- icon: linkedin
-  icon_pack: fab
-  name: Connect
-  url: https://www.linkedin.com/in/tiffany-m-dunn
-
-slides:
-summary: A revision of my final project for Categorical Statistics while at UC Davis.
+summary: A revision of my final project for Categorical Statistics course while at UC Davis.
 tags:
 - R
 - Statistics
 url_code: "https://github.com/tiffdunn/Projects/tree/master/CategoticalStats"
-url_pdf: ""
-url_slides: ""
-url_video: ""
 ---
 
 ```{r setup, include=FALSE}
@@ -24,6 +14,8 @@ knitr::opts_chunk$set(collapse = TRUE, echo = TRUE)
 ```
 
 Here is a revision of a final project I submitted in Fall of 2019 for an Analysis of Categorical Data Analysis course at UC Davis. The goal of this project was to complete an exploratory data analysis and determine the best predictors of byssinosis in textile workers.
+
+Link to complete RMarkdown file and data are available above.
 
 <center> <h2>Final Project</h2> </center>
 
@@ -40,7 +32,7 @@ In 1973, a large cotton textile company in North Carolina participated in a stud
 
 In this report, I will aim to evaluate the effect of the level of dust in the work place, length of employment, smoking status, sex, and / or race has on the odds that a person will get byssinosis. In order to analyze this data, I will make use of categorical data analysis methods, due to the categorical nature of which this data was collected. Before any analysis was made, it would first be important to set the variable of type of work place as a factor with levels of 1, 2, and 3. After understanding the nature of what this data looks like I will move to fit a model to the given data, as well as, make inference on which of the predicted variables recorded offer a significant effect on the presence of byssinosis in a given subject. Our goal in using model fitting in this way would be to make further predictions on a person’s risk for contracting the disease if more data were to be collected.
 
-### Explotatory Data Analysis
+### Exploratory Data Analysis
 
 We'll begin our analysis by looking at a descriptive summary of the data collected. To accomplish this, I can look at a plot of multiple boxplots measuring byssinosis by one predictor split up by its levels:
 
