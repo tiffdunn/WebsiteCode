@@ -8,7 +8,7 @@ weight = 65  # Order that this section will appear.
 title = "Projects"
 subtitle = ""
 
-[content] 
+[content]
   # Page type to display. E.g. project.
   page_type = "project"
 
@@ -28,6 +28,10 @@ subtitle = ""
   [[content.filter_button]]
     name = "Data Visualization"
     tag = "Data Visualization"
+
+  [[content.filter_button]]
+    name = "R"
+    tag = "R"
 
   [[content.filter_button]]
     name = "Other"
