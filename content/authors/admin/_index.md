@@ -15,7 +15,7 @@ interests:
 organizations:
 - name: University of California, Davis
   url: ""
-role: Graduating Applied Statistics Student
+role: Applied Statistics Graduate
 social:
 - icon: envelope
   icon_pack: fas
@@ -36,6 +36,8 @@ user_groups:
 - Visitors
 ---
 
-Tiffany Dunn is a graduating Applied Statistics student from the [University of California, Davis](https://statistics.ucdavis.edu/). At UC Davis, she was a research assistant at the [Human Memory Lab](https://yonelinas.faculty.ucdavis.edu/) working under [Andrew P Yonelinas](https://psychology.ucdavis.edu/people/fzyoneli), while being directly advised by [Grant S. Shields](https://www.grantsshields.com/). Her research interests within the lab include post-encoding stress effects on human memory and lifetime stress effects on autobiographical memory. She is an aspiring data analyst just starting out her professional career.
+Tiffany Dunn is an aspiring data analyst and recent Applied Statistics graduate from the [University of California, Davis](https://statistics.ucdavis.edu/). At UC Davis, she was a research assistant at the [Human Memory Lab](https://yonelinas.faculty.ucdavis.edu/) working with the direction of [Grant S. Shields](https://www.grantsshields.com/). Her research interests within the lab include post-encoding stress effects on human memory and lifetime stress effects on autobiographical memory.
+
+More recently, she has been working on developing her skills in data mining and visualizations as she seeks employment opprotunities post-grad!
 
 Full resume is available {{% staticref "files/Dunn_resume_2020.pdf" "newtab" %}}here{{% /staticref %}}.
