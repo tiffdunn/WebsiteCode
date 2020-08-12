@@ -38,6 +38,6 @@ user_groups:
 
 Tiffany Dunn is an aspiring data analyst and recent Applied Statistics graduate from the [University of California, Davis](https://statistics.ucdavis.edu/). At UC Davis, she was a research assistant at the [Human Memory Lab](https://yonelinas.faculty.ucdavis.edu/) working with the direction of [Grant S. Shields](https://www.grantsshields.com/). Her research interests within the lab include post-encoding stress effects on human memory and lifetime stress effects on autobiographical memory.
 
-More recently, she has been working on developing her skills in data mining and visualizations as she seeks employment opprotunities post-grad!
+More recently, she has been working on developing her skills in data mining and visualizations as she seeks an employment opportunity post-grad!
 
 Full resume is available {{% staticref "files/Dunn_resume_2020.pdf" "newtab" %}}here{{% /staticref %}}.
