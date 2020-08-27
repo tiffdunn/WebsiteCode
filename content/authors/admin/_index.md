@@ -10,7 +10,7 @@ education:
 email: ""
 interests:
 - Data Visualizations
-- Predictions and Forecasting
+- Predictive Analytics
 - Research Methods
 organizations:
 - name: University of California, Davis
